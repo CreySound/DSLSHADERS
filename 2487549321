@@ -5,25 +5,23 @@
 
 local DSL_SHADERS = Instance.new("ScreenGui")
 local MAIN = Instance.new("Frame")
-local TITLE = Instance.new("TextLabel")
 local DOF = Instance.new("TextButton")
 local SR = Instance.new("TextButton")
 local BUR = Instance.new("TextButton")
 local COLCOR = Instance.new("TextButton")
 local BLURFRAME = Instance.new("Frame")
-local TITLE_2 = Instance.new("TextLabel")
 local TEXT = Instance.new("TextLabel")
 local CONFIG1 = Instance.new("TextBox")
 local SHADOW = Instance.new("Frame")
+local TITLE = Instance.new("TextLabel")
 local SRFRAME = Instance.new("Frame")
-local TITLE_3 = Instance.new("TextLabel")
 local TEXT_2 = Instance.new("TextLabel")
 local TEXT_3 = Instance.new("TextLabel")
 local CONFIG2 = Instance.new("TextBox")
 local CONFIG1_2 = Instance.new("TextBox")
 local SHADOW_2 = Instance.new("Frame")
+local TITLE_2 = Instance.new("TextLabel")
 local DOFFRAME = Instance.new("Frame")
-local TITLE_4 = Instance.new("TextLabel")
 local TEXT_4 = Instance.new("TextLabel")
 local TEXT_5 = Instance.new("TextLabel")
 local TEXT_6 = Instance.new("TextLabel")
@@ -33,8 +31,8 @@ local CONFIG2_2 = Instance.new("TextBox")
 local CONFIG3 = Instance.new("TextBox")
 local CONFIG4 = Instance.new("TextBox")
 local SHADOW_3 = Instance.new("Frame")
+local TITLE_3 = Instance.new("TextLabel")
 local COLORCORFRAME = Instance.new("Frame")
-local TITLE_5 = Instance.new("TextLabel")
 local TEXT_8 = Instance.new("TextLabel")
 local TEXT_9 = Instance.new("TextLabel")
 local TEXT_10 = Instance.new("TextLabel")
@@ -46,8 +44,26 @@ local CONFIG2_3 = Instance.new("TextBox")
 local G = Instance.new("TextBox")
 local B = Instance.new("TextBox")
 local SHADOW_4 = Instance.new("Frame")
+local TITLE_4 = Instance.new("TextLabel")
 local CREDIT = Instance.new("TextLabel")
 local SHADOW_5 = Instance.new("Frame")
+local MAIN_2 = Instance.new("TextButton")
+local MAINFRAME = Instance.new("Frame")
+local TEXT_12 = Instance.new("TextLabel")
+local CONFIG1_5 = Instance.new("TextBox")
+local SHADOW_6 = Instance.new("Frame")
+local CONFIG2_4 = Instance.new("TextBox")
+local TEXT_13 = Instance.new("TextLabel")
+local CONFIG3_3 = Instance.new("TextBox")
+local TEXT_14 = Instance.new("TextLabel")
+local FOGSTART = Instance.new("TextBox")
+local TEXT_15 = Instance.new("TextLabel")
+local FOGEND = Instance.new("TextBox")
+local TITLE_5 = Instance.new("TextLabel")
+local B_2 = Instance.new("TextBox")
+local G_2 = Instance.new("TextBox")
+local R_2 = Instance.new("TextBox")
+local TITLE_6 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -59,21 +75,8 @@ MAIN.Name = "MAIN"
 MAIN.Parent = DSL_SHADERS
 MAIN.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 MAIN.BorderSizePixel = 0
-MAIN.Position = UDim2.new(0.0247442015, 0, 0.0721649453, 0)
-MAIN.Size = UDim2.new(0, 330, 0, 182)
-
-TITLE.Name = "TITLE"
-TITLE.Parent = MAIN
-TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TITLE.BackgroundTransparency = 1.000
-TITLE.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
-TITLE.Size = UDim2.new(0, 200, 0, 15)
-TITLE.Font = Enum.Font.Gotham
-TITLE.Text = "DSL SHADERS"
-TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
-TITLE.TextScaled = true
-TITLE.TextSize = 14.000
-TITLE.TextWrapped = true
+MAIN.Position = UDim2.new(0.0247441996, 0, 0.0721649453, 0)
+MAIN.Size = UDim2.new(0, 453, 0, 182)
 
 DOF.Name = "DOF"
 DOF.Parent = MAIN
@@ -90,7 +93,7 @@ SR.Name = "SR"
 SR.Parent = MAIN
 SR.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 SR.BorderSizePixel = 0
-SR.Position = UDim2.new(0.612121224, 0, 0.269230783, 0)
+SR.Position = UDim2.new(0.718081474, 0, 0.269230783, 0)
 SR.Size = UDim2.new(0, 113, 0, 40)
 SR.Font = Enum.Font.Gotham
 SR.Text = "SR"
@@ -112,7 +115,7 @@ COLCOR.Name = "COLCOR"
 COLCOR.Parent = MAIN
 COLCOR.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 COLCOR.BorderSizePixel = 0
-COLCOR.Position = UDim2.new(0.612121224, 0, 0.582417607, 0)
+COLCOR.Position = UDim2.new(0.715873957, 0, 0.582417607, 0)
 COLCOR.Size = UDim2.new(0, 113, 0, 40)
 COLCOR.Font = Enum.Font.Gotham
 COLCOR.Text = "CC"
@@ -127,19 +130,6 @@ BLURFRAME.BorderSizePixel = 0
 BLURFRAME.Position = UDim2.new(1.03204823, 0, -0.00113284588, 0)
 BLURFRAME.Size = UDim2.new(0, 330, 0, 182)
 BLURFRAME.Visible = false
-
-TITLE_2.Name = "TITLE"
-TITLE_2.Parent = BLURFRAME
-TITLE_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TITLE_2.BackgroundTransparency = 1.000
-TITLE_2.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
-TITLE_2.Size = UDim2.new(0, 200, 0, 15)
-TITLE_2.Font = Enum.Font.Gotham
-TITLE_2.Text = "DSL SHADERS - BLUR"
-TITLE_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TITLE_2.TextScaled = true
-TITLE_2.TextSize = 14.000
-TITLE_2.TextWrapped = true
 
 TEXT.Name = "TEXT"
 TEXT.Parent = BLURFRAME
@@ -173,27 +163,27 @@ SHADOW.BorderSizePixel = 0
 SHADOW.Position = UDim2.new(0, 0, 1, 0)
 SHADOW.Size = UDim2.new(0, 330, 0, 5)
 
+TITLE.Name = "TITLE"
+TITLE.Parent = BLURFRAME
+TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.BackgroundTransparency = 1.000
+TITLE.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
+TITLE.Size = UDim2.new(0, 200, 0, 15)
+TITLE.Font = Enum.Font.GothamSemibold
+TITLE.Text = "DSL SHADERS - BLUR"
+TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.TextScaled = true
+TITLE.TextSize = 14.000
+TITLE.TextWrapped = true
+
 SRFRAME.Name = "SRFRAME"
 SRFRAME.Parent = MAIN
 SRFRAME.Active = true
 SRFRAME.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 SRFRAME.BorderSizePixel = 0
-SRFRAME.Position = UDim2.new(2.07144213, 0, 0.581284821, 0)
+SRFRAME.Position = UDim2.new(1.50190568, 0, 1.09227383, 0)
 SRFRAME.Size = UDim2.new(0, 330, 0, 182)
 SRFRAME.Visible = false
-
-TITLE_3.Name = "TITLE"
-TITLE_3.Parent = SRFRAME
-TITLE_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TITLE_3.BackgroundTransparency = 1.000
-TITLE_3.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
-TITLE_3.Size = UDim2.new(0, 200, 0, 15)
-TITLE_3.Font = Enum.Font.Gotham
-TITLE_3.Text = "DSL SHADERS - SR"
-TITLE_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TITLE_3.TextScaled = true
-TITLE_3.TextSize = 14.000
-TITLE_3.TextWrapped = true
 
 TEXT_2.Name = "TEXT"
 TEXT_2.Parent = SRFRAME
@@ -252,6 +242,19 @@ SHADOW_2.BorderSizePixel = 0
 SHADOW_2.Position = UDim2.new(0, 0, 1, 0)
 SHADOW_2.Size = UDim2.new(0, 330, 0, 5)
 
+TITLE_2.Name = "TITLE"
+TITLE_2.Parent = SRFRAME
+TITLE_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_2.BackgroundTransparency = 1.000
+TITLE_2.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
+TITLE_2.Size = UDim2.new(0, 200, 0, 15)
+TITLE_2.Font = Enum.Font.GothamSemibold
+TITLE_2.Text = "DSL SHADERS - SR"
+TITLE_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_2.TextScaled = true
+TITLE_2.TextSize = 14.000
+TITLE_2.TextWrapped = true
+
 DOFFRAME.Name = "DOFFRAME"
 DOFFRAME.Parent = MAIN
 DOFFRAME.Active = true
@@ -260,19 +263,6 @@ DOFFRAME.BorderSizePixel = 0
 DOFFRAME.Position = UDim2.new(-0.0043154303, 0, 1.08677924, 0)
 DOFFRAME.Size = UDim2.new(0, 330, 0, 182)
 DOFFRAME.Visible = false
-
-TITLE_4.Name = "TITLE"
-TITLE_4.Parent = DOFFRAME
-TITLE_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TITLE_4.BackgroundTransparency = 1.000
-TITLE_4.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
-TITLE_4.Size = UDim2.new(0, 200, 0, 15)
-TITLE_4.Font = Enum.Font.Gotham
-TITLE_4.Text = "DSL SHADERS - DOF"
-TITLE_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TITLE_4.TextScaled = true
-TITLE_4.TextSize = 14.000
-TITLE_4.TextWrapped = true
 
 TEXT_4.Name = "TEXT"
 TEXT_4.Parent = DOFFRAME
@@ -381,27 +371,27 @@ SHADOW_3.BorderSizePixel = 0
 SHADOW_3.Position = UDim2.new(0, 0, 1, 0)
 SHADOW_3.Size = UDim2.new(0, 330, 0, 5)
 
+TITLE_3.Name = "TITLE"
+TITLE_3.Parent = DOFFRAME
+TITLE_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_3.BackgroundTransparency = 1.000
+TITLE_3.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
+TITLE_3.Size = UDim2.new(0, 200, 0, 15)
+TITLE_3.Font = Enum.Font.GothamSemibold
+TITLE_3.Text = "DSL SHADERS - DOF"
+TITLE_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_3.TextScaled = true
+TITLE_3.TextSize = 14.000
+TITLE_3.TextWrapped = true
+
 COLORCORFRAME.Name = "COLORCORFRAME"
 COLORCORFRAME.Parent = MAIN
 COLORCORFRAME.Active = true
 COLORCORFRAME.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 COLORCORFRAME.BorderSizePixel = 0
-COLORCORFRAME.Position = UDim2.new(1.03204823, 0, 1.09227371, 0)
+COLORCORFRAME.Position = UDim2.new(0.751695037, 0, 1.08677924, 0)
 COLORCORFRAME.Size = UDim2.new(0, 330, 0, 182)
 COLORCORFRAME.Visible = false
-
-TITLE_5.Name = "TITLE"
-TITLE_5.Parent = COLORCORFRAME
-TITLE_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TITLE_5.BackgroundTransparency = 1.000
-TITLE_5.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
-TITLE_5.Size = UDim2.new(0, 200, 0, 15)
-TITLE_5.Font = Enum.Font.Gotham
-TITLE_5.Text = "DSL SHADERS - CC"
-TITLE_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TITLE_5.TextScaled = true
-TITLE_5.TextSize = 14.000
-TITLE_5.TextWrapped = true
 
 TEXT_8.Name = "TEXT"
 TEXT_8.Parent = COLORCORFRAME
@@ -539,6 +529,19 @@ SHADOW_4.BorderSizePixel = 0
 SHADOW_4.Position = UDim2.new(0, 0, 1, 0)
 SHADOW_4.Size = UDim2.new(0, 330, 0, 5)
 
+TITLE_4.Name = "TITLE"
+TITLE_4.Parent = COLORCORFRAME
+TITLE_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_4.BackgroundTransparency = 1.000
+TITLE_4.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
+TITLE_4.Size = UDim2.new(0, 200, 0, 15)
+TITLE_4.Font = Enum.Font.GothamSemibold
+TITLE_4.Text = "DSL SHADERS - CC"
+TITLE_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_4.TextScaled = true
+TITLE_4.TextSize = 14.000
+TITLE_4.TextWrapped = true
+
 CREDIT.Name = "CREDIT"
 CREDIT.Parent = MAIN
 CREDIT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -558,11 +561,220 @@ SHADOW_5.Parent = MAIN
 SHADOW_5.BackgroundColor3 = Color3.fromRGB(7, 119, 255)
 SHADOW_5.BorderSizePixel = 0
 SHADOW_5.Position = UDim2.new(0, 0, 1, 0)
-SHADOW_5.Size = UDim2.new(0, 330, 0, 5)
+SHADOW_5.Size = UDim2.new(0, 453, 0, 5)
+
+MAIN_2.Name = "MAIN"
+MAIN_2.Parent = MAIN
+MAIN_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MAIN_2.BorderSizePixel = 0
+MAIN_2.Position = UDim2.new(0.374456018, 0, 0.439560473, 0)
+MAIN_2.Size = UDim2.new(0, 113, 0, 40)
+MAIN_2.Font = Enum.Font.Gotham
+MAIN_2.Text = "MAIN"
+MAIN_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MAIN_2.TextSize = 14.000
+
+MAINFRAME.Name = "MAINFRAME"
+MAINFRAME.Parent = MAIN
+MAINFRAME.Active = true
+MAINFRAME.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+MAINFRAME.BorderSizePixel = 0
+MAINFRAME.Position = UDim2.new(1.78480768, 0, -0.00113284588, 0)
+MAINFRAME.Size = UDim2.new(0, 330, 0, 182)
+MAINFRAME.Visible = false
+
+TEXT_12.Name = "TEXT"
+TEXT_12.Parent = MAINFRAME
+TEXT_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TEXT_12.BackgroundTransparency = 1.000
+TEXT_12.Position = UDim2.new(0.0857900456, 0, 0.274102181, 0)
+TEXT_12.Size = UDim2.new(0, 100, 0, 15)
+TEXT_12.Font = Enum.Font.Gotham
+TEXT_12.Text = "TIME"
+TEXT_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TEXT_12.TextSize = 14.000
+TEXT_12.TextWrapped = true
+
+CONFIG1_5.Name = "CONFIG1"
+CONFIG1_5.Parent = MAINFRAME
+CONFIG1_5.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+CONFIG1_5.BorderSizePixel = 0
+CONFIG1_5.Position = UDim2.new(0.421212077, 0, 0.252747267, 0)
+CONFIG1_5.Size = UDim2.new(0, 176, 0, 24)
+CONFIG1_5.ClearTextOnFocus = false
+CONFIG1_5.Font = Enum.Font.Gotham
+CONFIG1_5.PlaceholderText = "0 - 24"
+CONFIG1_5.Text = "12"
+CONFIG1_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+CONFIG1_5.TextSize = 14.000
+
+SHADOW_6.Name = "SHADOW"
+SHADOW_6.Parent = MAINFRAME
+SHADOW_6.BackgroundColor3 = Color3.fromRGB(7, 119, 255)
+SHADOW_6.BorderSizePixel = 0
+SHADOW_6.Position = UDim2.new(0, 0, 1, 0)
+SHADOW_6.Size = UDim2.new(0, 330, 0, 5)
+
+CONFIG2_4.Name = "CONFIG2"
+CONFIG2_4.Parent = MAINFRAME
+CONFIG2_4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+CONFIG2_4.BorderSizePixel = 0
+CONFIG2_4.Position = UDim2.new(0.421212077, 0, 0.434065938, 0)
+CONFIG2_4.Size = UDim2.new(0, 176, 0, 24)
+CONFIG2_4.ClearTextOnFocus = false
+CONFIG2_4.Font = Enum.Font.Gotham
+CONFIG2_4.PlaceholderText = "0 - inf"
+CONFIG2_4.Text = "2"
+CONFIG2_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+CONFIG2_4.TextSize = 14.000
+
+TEXT_13.Name = "TEXT"
+TEXT_13.Parent = MAINFRAME
+TEXT_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TEXT_13.BackgroundTransparency = 1.000
+TEXT_13.Position = UDim2.new(0.0857900456, 0, 0.455420852, 0)
+TEXT_13.Size = UDim2.new(0, 100, 0, 15)
+TEXT_13.Font = Enum.Font.Gotham
+TEXT_13.Text = "BRIGHTNESS"
+TEXT_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TEXT_13.TextSize = 14.000
+TEXT_13.TextWrapped = true
+
+CONFIG3_3.Name = "CONFIG3"
+CONFIG3_3.Parent = MAINFRAME
+CONFIG3_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+CONFIG3_3.BorderSizePixel = 0
+CONFIG3_3.Position = UDim2.new(0.421212077, 0, 0.626373649, 0)
+CONFIG3_3.Size = UDim2.new(0, 176, 0, 24)
+CONFIG3_3.ClearTextOnFocus = false
+CONFIG3_3.Font = Enum.Font.Gotham
+CONFIG3_3.PlaceholderColor3 = Color3.fromRGB(255, 0, 0)
+CONFIG3_3.PlaceholderText = "err"
+CONFIG3_3.Text = ""
+CONFIG3_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+CONFIG3_3.TextSize = 14.000
+
+TEXT_14.Name = "TEXT"
+TEXT_14.Parent = MAINFRAME
+TEXT_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TEXT_14.BackgroundTransparency = 1.000
+TEXT_14.Position = UDim2.new(0.0857900456, 0, 0.647728562, 0)
+TEXT_14.Size = UDim2.new(0, 100, 0, 15)
+TEXT_14.Font = Enum.Font.Gotham
+TEXT_14.Text = "STYLE"
+TEXT_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TEXT_14.TextSize = 14.000
+TEXT_14.TextWrapped = true
+
+FOGSTART.Name = "FOGSTART"
+FOGSTART.Parent = MAINFRAME
+FOGSTART.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+FOGSTART.BorderSizePixel = 0
+FOGSTART.Position = UDim2.new(0.421212107, 0, 0.763736248, 0)
+FOGSTART.Size = UDim2.new(0, 47, 0, 18)
+FOGSTART.ClearTextOnFocus = false
+FOGSTART.Font = Enum.Font.Gotham
+FOGSTART.PlaceholderText = "START"
+FOGSTART.Text = "inf"
+FOGSTART.TextColor3 = Color3.fromRGB(255, 255, 255)
+FOGSTART.TextSize = 10.000
+
+TEXT_15.Name = "TEXT"
+TEXT_15.Parent = MAINFRAME
+TEXT_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TEXT_15.BackgroundTransparency = 1.000
+TEXT_15.Position = UDim2.new(0.0857900456, 0, 0.823552728, 0)
+TEXT_15.Size = UDim2.new(0, 100, 0, 15)
+TEXT_15.Font = Enum.Font.Gotham
+TEXT_15.Text = "FOG"
+TEXT_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TEXT_15.TextSize = 14.000
+TEXT_15.TextWrapped = true
+
+FOGEND.Name = "FOGEND"
+FOGEND.Parent = MAINFRAME
+FOGEND.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+FOGEND.BorderSizePixel = 0
+FOGEND.Position = UDim2.new(0.421212107, 0, 0.879120946, 0)
+FOGEND.Size = UDim2.new(0, 47, 0, 14)
+FOGEND.ClearTextOnFocus = false
+FOGEND.Font = Enum.Font.Gotham
+FOGEND.PlaceholderText = "END"
+FOGEND.Text = "inf"
+FOGEND.TextColor3 = Color3.fromRGB(255, 255, 255)
+FOGEND.TextSize = 10.000
+
+TITLE_5.Name = "TITLE"
+TITLE_5.Parent = MAINFRAME
+TITLE_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_5.BackgroundTransparency = 1.000
+TITLE_5.Position = UDim2.new(0.194880977, 0, 0.0708054826, 0)
+TITLE_5.Size = UDim2.new(0, 200, 0, 15)
+TITLE_5.Font = Enum.Font.GothamSemibold
+TITLE_5.Text = "DSL SHADERS - MAIN"
+TITLE_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_5.TextScaled = true
+TITLE_5.TextSize = 14.000
+TITLE_5.TextWrapped = true
+
+B_2.Name = "B"
+B_2.Parent = MAINFRAME
+B_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+B_2.BorderSizePixel = 0
+B_2.Position = UDim2.new(0.867300749, 0, 0.802197814, 0)
+B_2.Size = UDim2.new(0, 35, 0, 24)
+B_2.ClearTextOnFocus = false
+B_2.Font = Enum.Font.Gotham
+B_2.PlaceholderColor3 = Color3.fromRGB(0, 0, 170)
+B_2.PlaceholderText = "0 - 255"
+B_2.Text = "255"
+B_2.TextColor3 = Color3.fromRGB(0, 0, 255)
+B_2.TextSize = 14.000
+
+G_2.Name = "G"
+G_2.Parent = MAINFRAME
+G_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+G_2.BorderSizePixel = 0
+G_2.Position = UDim2.new(0.724962234, 0, 0.802197814, 0)
+G_2.Size = UDim2.new(0, 35, 0, 24)
+G_2.ClearTextOnFocus = false
+G_2.Font = Enum.Font.Gotham
+G_2.PlaceholderColor3 = Color3.fromRGB(0, 170, 0)
+G_2.PlaceholderText = "0 - 255"
+G_2.Text = "255"
+G_2.TextColor3 = Color3.fromRGB(0, 255, 0)
+G_2.TextSize = 14.000
+
+R_2.Name = "R"
+R_2.Parent = MAINFRAME
+R_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+R_2.BorderSizePixel = 0
+R_2.Position = UDim2.new(0.584848523, 0, 0.802197814, 0)
+R_2.Size = UDim2.new(0, 35, 0, 24)
+R_2.ClearTextOnFocus = false
+R_2.Font = Enum.Font.Gotham
+R_2.PlaceholderColor3 = Color3.fromRGB(170, 0, 0)
+R_2.PlaceholderText = "0 - 255"
+R_2.Text = "255"
+R_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+R_2.TextSize = 14.000
+
+TITLE_6.Name = "TITLE"
+TITLE_6.Parent = MAIN
+TITLE_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_6.BackgroundTransparency = 1.000
+TITLE_6.Position = UDim2.new(0.278766185, 0, 0.0708054826, 0)
+TITLE_6.Size = UDim2.new(0, 200, 0, 15)
+TITLE_6.Font = Enum.Font.GothamSemibold
+TITLE_6.Text = "DSL SHADERS"
+TITLE_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_6.TextScaled = true
+TITLE_6.TextSize = 14.000
+TITLE_6.TextWrapped = true
 
 -- Scripts:
 
-local function FXTPWQM_fake_script() -- DOF.SCRIPT 
+local function ZDWCIW_fake_script() -- DOF.SCRIPT 
 	local script = Instance.new('LocalScript', DOF)
 
 	--[[local Blur = Instance.new("BlurEffect", game.Lighting)
@@ -582,8 +794,8 @@ local function FXTPWQM_fake_script() -- DOF.SCRIPT
 		end
 	end)
 end
-coroutine.wrap(FXTPWQM_fake_script)()
-local function MIBILA_fake_script() -- SR.SCRIPT 
+coroutine.wrap(ZDWCIW_fake_script)()
+local function CPCTV_fake_script() -- SR.SCRIPT 
 	local script = Instance.new('LocalScript', SR)
 
 	--[[local Blur = Instance.new("BlurEffect", game.Lighting)
@@ -603,8 +815,8 @@ local function MIBILA_fake_script() -- SR.SCRIPT
 		end
 	end)
 end
-coroutine.wrap(MIBILA_fake_script)()
-local function BPHW_fake_script() -- BUR.SCRIPT 
+coroutine.wrap(CPCTV_fake_script)()
+local function HUIZN_fake_script() -- BUR.SCRIPT 
 	local script = Instance.new('LocalScript', BUR)
 
 	--[[local Blur = Instance.new("BlurEffect", game.Lighting)
@@ -624,8 +836,8 @@ local function BPHW_fake_script() -- BUR.SCRIPT
 		end
 	end)
 end
-coroutine.wrap(BPHW_fake_script)()
-local function USQJEZ_fake_script() -- COLCOR.SCRIPT 
+coroutine.wrap(HUIZN_fake_script)()
+local function FMENCJ_fake_script() -- COLCOR.SCRIPT 
 	local script = Instance.new('LocalScript', COLCOR)
 
 	--[[local Blur = Instance.new("BlurEffect", game.Lighting)
@@ -645,8 +857,8 @@ local function USQJEZ_fake_script() -- COLCOR.SCRIPT
 		end
 	end)
 end
-coroutine.wrap(USQJEZ_fake_script)()
-local function TLWAFIQ_fake_script() -- MAIN.DRAG 
+coroutine.wrap(FMENCJ_fake_script)()
+local function EDWHKY_fake_script() -- MAIN.DRAG 
 	local script = Instance.new('LocalScript', MAIN)
 
 	local UIS = game:GetService("UserInputService")
@@ -687,8 +899,8 @@ local function TLWAFIQ_fake_script() -- MAIN.DRAG
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(TLWAFIQ_fake_script)()
-local function TLZLIH_fake_script() -- BLURFRAME.SCRIPT 
+coroutine.wrap(EDWHKY_fake_script)()
+local function YJDYV_fake_script() -- BLURFRAME.SCRIPT 
 	local script = Instance.new('LocalScript', BLURFRAME)
 
 	local Blur = Instance.new("BlurEffect", game.Lighting)
@@ -697,14 +909,14 @@ local function TLZLIH_fake_script() -- BLURFRAME.SCRIPT
 		Blur.Size = script.Parent.CONFIG1.Text
 	end
 end
-coroutine.wrap(TLZLIH_fake_script)()
-local function XEPVHNN_fake_script() -- BLURFRAME.DRAG 
+coroutine.wrap(YJDYV_fake_script)()
+local function USEI_fake_script() -- BLURFRAME.DRAG 
 	local script = Instance.new('LocalScript', BLURFRAME)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(XEPVHNN_fake_script)()
-local function IQMS_fake_script() -- SRFRAME.SCRIPT 
+coroutine.wrap(USEI_fake_script)()
+local function JUYVJ_fake_script() -- SRFRAME.SCRIPT 
 	local script = Instance.new('LocalScript', SRFRAME)
 
 	local SunRays = Instance.new("SunRaysEffect", game.Lighting)
@@ -714,14 +926,14 @@ local function IQMS_fake_script() -- SRFRAME.SCRIPT
 		SunRays.Spread = script.Parent.CONFIG2.Text
 	end
 end
-coroutine.wrap(IQMS_fake_script)()
-local function NVFPU_fake_script() -- SRFRAME.DRAG 
+coroutine.wrap(JUYVJ_fake_script)()
+local function WTAVYT_fake_script() -- SRFRAME.DRAG 
 	local script = Instance.new('LocalScript', SRFRAME)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(NVFPU_fake_script)()
-local function VFDBPIX_fake_script() -- DOFFRAME.SCRIPT 
+coroutine.wrap(WTAVYT_fake_script)()
+local function BSAUU_fake_script() -- DOFFRAME.SCRIPT 
 	local script = Instance.new('LocalScript', DOFFRAME)
 
 	local DepthOfField = Instance.new("DepthOfFieldEffect", game.Lighting)
@@ -733,14 +945,14 @@ local function VFDBPIX_fake_script() -- DOFFRAME.SCRIPT
 		DepthOfField.InFocusRadius = script.Parent.CONFIG4.Text
 	end
 end
-coroutine.wrap(VFDBPIX_fake_script)()
-local function PYYQ_fake_script() -- DOFFRAME.DRAG 
+coroutine.wrap(BSAUU_fake_script)()
+local function EVKPCC_fake_script() -- DOFFRAME.DRAG 
 	local script = Instance.new('LocalScript', DOFFRAME)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(PYYQ_fake_script)()
-local function BVNZIO_fake_script() -- COLORCORFRAME.SCRIPT 
+coroutine.wrap(EVKPCC_fake_script)()
+local function PJRJE_fake_script() -- COLORCORFRAME.SCRIPT 
 	local script = Instance.new('LocalScript', COLORCORFRAME)
 
 	local ColorCorrection = Instance.new("ColorCorrectionEffect", game.Lighting)
@@ -752,14 +964,14 @@ local function BVNZIO_fake_script() -- COLORCORFRAME.SCRIPT
 		ColorCorrection.TintColor = Color3.fromRGB(script.Parent.R.Text, script.Parent.G.Text, script.Parent.B.Text)
 	end
 end
-coroutine.wrap(BVNZIO_fake_script)()
-local function CNQKU_fake_script() -- COLORCORFRAME.DRAG 
+coroutine.wrap(PJRJE_fake_script)()
+local function SLYJA_fake_script() -- COLORCORFRAME.DRAG 
 	local script = Instance.new('LocalScript', COLORCORFRAME)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(CNQKU_fake_script)()
-local function PEAHR_fake_script() -- SHADOW_5.Rainbow Frame 
+coroutine.wrap(SLYJA_fake_script)()
+local function BVVWGN_fake_script() -- SHADOW_5.Rainbow Frame 
 	local script = Instance.new('LocalScript', SHADOW_5)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -774,4 +986,46 @@ local function PEAHR_fake_script() -- SHADOW_5.Rainbow Frame
 	
 	--Enjoy ;) dont change anything. I didnt script this so i dont know if you can change but its adviced not 2
 end
-coroutine.wrap(PEAHR_fake_script)()
+coroutine.wrap(BVVWGN_fake_script)()
+local function CFSFKH_fake_script() -- MAIN_2.SCRIPT 
+	local script = Instance.new('LocalScript', MAIN_2)
+
+	--[[local Blur = Instance.new("BlurEffect", game.Lighting)
+	local ColorCorrection = Instance.new("ColorCorrectionEffect", game.Lighting)
+	local DepthOfField = Instance.new("DepthOfFieldEffect", game.Lighting)
+	local SunRays = Instance.new("SunRaysEffect", game.Lighting)]]
+	
+	local toggled = false
+	
+	script.Parent.Activated:Connect(function()
+		toggled = not toggled
+		
+		if toggled then		
+			script.Parent.Parent.MAINFRAME.Visible = true
+		else		
+			script.Parent.Parent.MAINFRAME.Visible = false
+		end
+	end)
+end
+coroutine.wrap(CFSFKH_fake_script)()
+local function PZVCJ_fake_script() -- MAINFRAME.SCRIPT 
+	local script = Instance.new('LocalScript', MAINFRAME)
+
+	local Lighting = game.Lighting
+	
+	while wait() do
+		Lighting.ClockTime = script.Parent.CONFIG1.Text
+		Lighting.Brightness = script.Parent.CONFIG2.Text
+		--Lighting.??? = script.Parent.CONFIG3.Text
+		Lighting.FogStart = script.Parent.FOGSTART.Text
+		Lighting.FogEnd = script.Parent.FOGEND.Text
+		Lighting.FogColor = Color3.fromRGB(script.Parent.R.Text, script.Parent.G.Text, script.Parent.B.Text)
+	end
+end
+coroutine.wrap(PZVCJ_fake_script)()
+local function UFLBHVL_fake_script() -- MAINFRAME.DRAG 
+	local script = Instance.new('LocalScript', MAINFRAME)
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(UFLBHVL_fake_script)()
